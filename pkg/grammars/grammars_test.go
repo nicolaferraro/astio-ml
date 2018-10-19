@@ -18,7 +18,6 @@ limitations under the License.
 package grammars
 
 import (
-	"github.com/antlr/antlr4/runtime/Go/antlr"
 	_ "github.com/antlr/antlr4/runtime/Go/antlr"
 	"github.com/nicolaferraro/astio-ml/pkg/grammars/java"
 	"github.com/stretchr/testify/assert"
@@ -26,29 +25,10 @@ import (
 )
 
 func TestJava(t *testing.T) {
-
-	ttt(t, "../../test/data/CaffeineCacheSample.java")
-	ttt(t, "../../test/data/CaffeineCacheSample2.java")
-
-}
-
-func ttt(t *testing.T, n string) {
-	charStream, err := antlr.NewFileStream(n)
+	integration, err := java.ParseCamelFile("../../test/data/CaffeineCacheSample.java")
 	assert.Nil(t, err)
-	lexer := java.NewJava9Lexer(charStream)
-	stream := antlr.NewCommonTokenStream(lexer, 0)
-	parser := java.NewJava9Parser(stream)
-
-	parser.AddErrorListener(antlr.NewDiagnosticErrorListener(true))
-	parser.BuildParseTrees = true
-	tree := parser.CompilationUnit()
-	antlr.ParseTreeWalkerDefault.Walk(&TreeShapeListener{}, tree)
-}
-
-type TreeShapeListener struct {
-	*java.BaseJava9Listener
-}
-
-func (s *TreeShapeListener) EnterClassType(ctx *java.ClassTypeContext) {
-	println("Cippalippa " + ctx.GetText())
+	assert.NotNil(t, integration)
+	assert.Len(t, integration.Routes, 1)
+	assert.Equal(t, integration.Routes[0].From, "timer:tick")
+	assert.Contains(t, integration.Routes[0].To, "caffeine-cache://test")
 }

@@ -5443,7 +5443,7 @@ func (p *Java9Parser) moduleName(_p int) (localctx IModuleNameContext) {
 	_parentState := p.GetState()
 	localctx = NewModuleNameContext(p, p.GetParserRuleContext(), _parentState)
 	var _prevctx IModuleNameContext = localctx
-	var _ antlr.ParserRuleContext = _prevctx // TODO: To prevent unused variable warning.
+	var _ antlr.ParserRuleContext = _prevctx // TODO: AddTo prevent unused variable warning.
 	_startState := 50
 	p.EnterRecursionRule(localctx, 50, Java9ParserRULE_moduleName, _p)
 
@@ -5594,7 +5594,7 @@ func (p *Java9Parser) packageName(_p int) (localctx IPackageNameContext) {
 	_parentState := p.GetState()
 	localctx = NewPackageNameContext(p, p.GetParserRuleContext(), _parentState)
 	var _prevctx IPackageNameContext = localctx
-	var _ antlr.ParserRuleContext = _prevctx // TODO: To prevent unused variable warning.
+	var _ antlr.ParserRuleContext = _prevctx // TODO: AddTo prevent unused variable warning.
 	_startState := 52
 	p.EnterRecursionRule(localctx, 52, Java9ParserRULE_packageName, _p)
 
@@ -5873,7 +5873,7 @@ func (p *Java9Parser) packageOrTypeName(_p int) (localctx IPackageOrTypeNameCont
 	_parentState := p.GetState()
 	localctx = NewPackageOrTypeNameContext(p, p.GetParserRuleContext(), _parentState)
 	var _prevctx IPackageOrTypeNameContext = localctx
-	var _ antlr.ParserRuleContext = _prevctx // TODO: To prevent unused variable warning.
+	var _ antlr.ParserRuleContext = _prevctx // TODO: AddTo prevent unused variable warning.
 	_startState := 56
 	p.EnterRecursionRule(localctx, 56, Java9ParserRULE_packageOrTypeName, _p)
 
@@ -6249,7 +6249,7 @@ func (p *Java9Parser) ambiguousName(_p int) (localctx IAmbiguousNameContext) {
 	_parentState := p.GetState()
 	localctx = NewAmbiguousNameContext(p, p.GetParserRuleContext(), _parentState)
 	var _prevctx IAmbiguousNameContext = localctx
-	var _ antlr.ParserRuleContext = _prevctx // TODO: To prevent unused variable warning.
+	var _ antlr.ParserRuleContext = _prevctx // TODO: AddTo prevent unused variable warning.
 	_startState := 62
 	p.EnterRecursionRule(localctx, 62, Java9ParserRULE_ambiguousName, _p)
 
@@ -35415,7 +35415,7 @@ func (p *Java9Parser) conditionalOrExpression(_p int) (localctx IConditionalOrEx
 	_parentState := p.GetState()
 	localctx = NewConditionalOrExpressionContext(p, p.GetParserRuleContext(), _parentState)
 	var _prevctx IConditionalOrExpressionContext = localctx
-	var _ antlr.ParserRuleContext = _prevctx // TODO: To prevent unused variable warning.
+	var _ antlr.ParserRuleContext = _prevctx // TODO: AddTo prevent unused variable warning.
 	_startState := 448
 	p.EnterRecursionRule(localctx, 448, Java9ParserRULE_conditionalOrExpression, _p)
 
@@ -35566,7 +35566,7 @@ func (p *Java9Parser) conditionalAndExpression(_p int) (localctx IConditionalAnd
 	_parentState := p.GetState()
 	localctx = NewConditionalAndExpressionContext(p, p.GetParserRuleContext(), _parentState)
 	var _prevctx IConditionalAndExpressionContext = localctx
-	var _ antlr.ParserRuleContext = _prevctx // TODO: To prevent unused variable warning.
+	var _ antlr.ParserRuleContext = _prevctx // TODO: AddTo prevent unused variable warning.
 	_startState := 450
 	p.EnterRecursionRule(localctx, 450, Java9ParserRULE_conditionalAndExpression, _p)
 
@@ -35717,7 +35717,7 @@ func (p *Java9Parser) inclusiveOrExpression(_p int) (localctx IInclusiveOrExpres
 	_parentState := p.GetState()
 	localctx = NewInclusiveOrExpressionContext(p, p.GetParserRuleContext(), _parentState)
 	var _prevctx IInclusiveOrExpressionContext = localctx
-	var _ antlr.ParserRuleContext = _prevctx // TODO: To prevent unused variable warning.
+	var _ antlr.ParserRuleContext = _prevctx // TODO: AddTo prevent unused variable warning.
 	_startState := 452
 	p.EnterRecursionRule(localctx, 452, Java9ParserRULE_inclusiveOrExpression, _p)
 
@@ -35868,7 +35868,7 @@ func (p *Java9Parser) exclusiveOrExpression(_p int) (localctx IExclusiveOrExpres
 	_parentState := p.GetState()
 	localctx = NewExclusiveOrExpressionContext(p, p.GetParserRuleContext(), _parentState)
 	var _prevctx IExclusiveOrExpressionContext = localctx
-	var _ antlr.ParserRuleContext = _prevctx // TODO: To prevent unused variable warning.
+	var _ antlr.ParserRuleContext = _prevctx // TODO: AddTo prevent unused variable warning.
 	_startState := 454
 	p.EnterRecursionRule(localctx, 454, Java9ParserRULE_exclusiveOrExpression, _p)
 
@@ -36019,7 +36019,7 @@ func (p *Java9Parser) andExpression(_p int) (localctx IAndExpressionContext) {
 	_parentState := p.GetState()
 	localctx = NewAndExpressionContext(p, p.GetParserRuleContext(), _parentState)
 	var _prevctx IAndExpressionContext = localctx
-	var _ antlr.ParserRuleContext = _prevctx // TODO: To prevent unused variable warning.
+	var _ antlr.ParserRuleContext = _prevctx // TODO: AddTo prevent unused variable warning.
 	_startState := 456
 	p.EnterRecursionRule(localctx, 456, Java9ParserRULE_andExpression, _p)
 
@@ -36170,7 +36170,7 @@ func (p *Java9Parser) equalityExpression(_p int) (localctx IEqualityExpressionCo
 	_parentState := p.GetState()
 	localctx = NewEqualityExpressionContext(p, p.GetParserRuleContext(), _parentState)
 	var _prevctx IEqualityExpressionContext = localctx
-	var _ antlr.ParserRuleContext = _prevctx // TODO: To prevent unused variable warning.
+	var _ antlr.ParserRuleContext = _prevctx // TODO: AddTo prevent unused variable warning.
 	_startState := 458
 	p.EnterRecursionRule(localctx, 458, Java9ParserRULE_equalityExpression, _p)
 
@@ -36354,7 +36354,7 @@ func (p *Java9Parser) relationalExpression(_p int) (localctx IRelationalExpressi
 	_parentState := p.GetState()
 	localctx = NewRelationalExpressionContext(p, p.GetParserRuleContext(), _parentState)
 	var _prevctx IRelationalExpressionContext = localctx
-	var _ antlr.ParserRuleContext = _prevctx // TODO: To prevent unused variable warning.
+	var _ antlr.ParserRuleContext = _prevctx // TODO: AddTo prevent unused variable warning.
 	_startState := 460
 	p.EnterRecursionRule(localctx, 460, Java9ParserRULE_relationalExpression, _p)
 
@@ -36579,7 +36579,7 @@ func (p *Java9Parser) shiftExpression(_p int) (localctx IShiftExpressionContext)
 	_parentState := p.GetState()
 	localctx = NewShiftExpressionContext(p, p.GetParserRuleContext(), _parentState)
 	var _prevctx IShiftExpressionContext = localctx
-	var _ antlr.ParserRuleContext = _prevctx // TODO: To prevent unused variable warning.
+	var _ antlr.ParserRuleContext = _prevctx // TODO: AddTo prevent unused variable warning.
 	_startState := 462
 	p.EnterRecursionRule(localctx, 462, Java9ParserRULE_shiftExpression, _p)
 
@@ -36786,7 +36786,7 @@ func (p *Java9Parser) additiveExpression(_p int) (localctx IAdditiveExpressionCo
 	_parentState := p.GetState()
 	localctx = NewAdditiveExpressionContext(p, p.GetParserRuleContext(), _parentState)
 	var _prevctx IAdditiveExpressionContext = localctx
-	var _ antlr.ParserRuleContext = _prevctx // TODO: To prevent unused variable warning.
+	var _ antlr.ParserRuleContext = _prevctx // TODO: AddTo prevent unused variable warning.
 	_startState := 464
 	p.EnterRecursionRule(localctx, 464, Java9ParserRULE_additiveExpression, _p)
 
@@ -36960,7 +36960,7 @@ func (p *Java9Parser) multiplicativeExpression(_p int) (localctx IMultiplicative
 	_parentState := p.GetState()
 	localctx = NewMultiplicativeExpressionContext(p, p.GetParserRuleContext(), _parentState)
 	var _prevctx IMultiplicativeExpressionContext = localctx
-	var _ antlr.ParserRuleContext = _prevctx // TODO: To prevent unused variable warning.
+	var _ antlr.ParserRuleContext = _prevctx // TODO: AddTo prevent unused variable warning.
 	_startState := 466
 	p.EnterRecursionRule(localctx, 466, Java9ParserRULE_multiplicativeExpression, _p)
 

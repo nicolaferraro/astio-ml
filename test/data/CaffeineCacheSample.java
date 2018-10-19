@@ -12,7 +12,7 @@ public class CaffeineCacheSample extends RouteBuilder {
                     .setBody(constant(null))
                     .setHeader("CamelCaffeineAction", constant("GET"))
                     .setHeader("CamelCaffeineKey", constant("1"))
-                    .toF("caffeine-cache://%s", "test")
+                    .to("caffeine-cache://test")
                     .log("Result of Action ${header.CamelCaffeineAction} with key ${header.CamelCaffeineKey} is: ${body}")
                     .setBody(constant(null))
                     .setHeader("CamelCaffeineAction", constant("INVALIDATE"))
